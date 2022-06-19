@@ -10,7 +10,7 @@
 <body>
     <!-- to applied breakpoint for example md:bg-red then, will apply that color after 768px-->
     <div class="mx-auto">
-        <nav class="bg-gray-800 flex justify-between lg:justify-start items-center p-3">
+        <nav class="bg-red-700 flex justify-between lg:justify-start items-center p-3">
             <div class="logo p-2 w-1/6">
                 <img src="/assets/img/logo.png" alt="Logo" width="100">
             </div>
@@ -21,21 +21,25 @@
                     <li><a href="" class="link">Explore</a></li>
                     <li><a href="" class="border-2 border-yellow-400 text-white font-bold p-3 rounded-full hover:bg-yellow-400 
                         hover:text-black transition duration-500">Bowser Fury</a></li>
-                    <li><a href="" class="bg-red-500 rounded-full text-white p-3 font-bold hover:bg-red-600 transition duration-500">Buy Now</a></li>
+                    <li><a href="" class="bg-yellow-400 rounded-full text-gray-600 p-3 font-bold hover:bg-yellow-300 transition duration-500">Buy Now</a></li>
                 </ul>
             </div>
             <div class="block lg:hidden w-1/6 lg:w-4/6">
-                <a href="" class="link" id="mobile-menu">Menú</a>
-                <ul class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-gray-800">
+                <a href="" class="filter" id="mobile-menu"><img src="/assets/img/menu.png" width="25" alt="menu"></a>
+                <ul class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-red-700">
                     <li><a href="" class="link">Home</a></li>
                     <li><a href="" class="link">Play Together</a></li>
                     <li><a href="" class="link">Explore</a></li>
                     <li><a href="" class="my-4 inline-block border-2 border-yellow-400 text-white font-bold p-3 rounded-full hover:bg-yellow-400 
                         hover:text-black transition duration-500 mt-4">Bowser Fury</a></li>
-                    <li><a href="" class="my-4 inline-block  bg-red-500 rounded-full text-white p-3 font-bold hover:bg-red-600 transition duration-500">Buy Now</a></li>
+                    <li><a href="" class="my-4 inline-block  bg-yellow-400 rounded-full text-gray-600 p-3 font-bold hover:bg-yellow-300 transition duration-500">Buy Now</a></li>
                 </ul>
             </div>
         </nav>
+
+        <section class="header">
+            <img src="/assets/img/hero.jpg" alt="fondo">
+        </section>
     </div>  
     <script>
         const menuButton = document.querySelector("#mobile-menu");
