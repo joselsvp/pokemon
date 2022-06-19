@@ -19,11 +19,31 @@
                     <li><a href="" class="link">Home</a></li>
                     <li><a href="" class="link">Play Together</a></li>
                     <li><a href="" class="link">Explore</a></li>
-                    <li><a href="" class="link">Bowser Fury</a></li>
-                    <li><a href="" class="link">Buy Now</a></li>
+                    <li><a href="" class="border-2 border-yellow-400 text-white font-bold p-3 rounded-full hover:bg-yellow-400 
+                        hover:text-black transition duration-500">Bowser Fury</a></li>
+                    <li><a href="" class="bg-red-500 rounded-full text-white p-3 font-bold hover:bg-red-600 transition duration-500">Buy Now</a></li>
+                </ul>
+            </div>
+            <div class="block lg:hidden w-1/6 lg:w-4/6">
+                <a href="" class="link" id="mobile-menu">Menú</a>
+                <ul class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-gray-800">
+                    <li><a href="" class="link">Home</a></li>
+                    <li><a href="" class="link">Play Together</a></li>
+                    <li><a href="" class="link">Explore</a></li>
+                    <li><a href="" class="my-4 inline-block border-2 border-yellow-400 text-white font-bold p-3 rounded-full hover:bg-yellow-400 
+                        hover:text-black transition duration-500 mt-4">Bowser Fury</a></li>
+                    <li><a href="" class="my-4 inline-block  bg-red-500 rounded-full text-white p-3 font-bold hover:bg-red-600 transition duration-500">Buy Now</a></li>
                 </ul>
             </div>
         </nav>
     </div>  
+    <script>
+        const menuButton = document.querySelector("#mobile-menu");
+        menuButton.addEventListener('click', e => {
+            e.preventDefault();
+            const menu = document.querySelector(".mobile-links");
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
