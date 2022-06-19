@@ -622,6 +622,9 @@ video {
 .h-6 {
 	height: 1.5rem;
 }
+.w-\[1920px\] {
+	width: 1920px;
+}
 .w-1\/6 {
 	width: 16.666667%;
 }
@@ -792,5 +795,12 @@ video {
 
 	.lg\:justify-start {
 		justify-content: flex-start;
+	}
+}
+
+@media (min-width: 320px) {
+
+	.xsm\:w-full {
+		width: 100%;
 	}
 }
