@@ -607,6 +607,9 @@ video {
 .mt-4 {
 	margin-top: 1rem;
 }
+.mt-72 {
+	margin-top: 18rem;
+}
 .block {
 	display: block;
 }
@@ -631,6 +634,9 @@ video {
 .w-full {
 	width: 100%;
 }
+.w-5\/6 {
+	width: 83.333333%;
+}
 .flex-col {
 	flex-direction: column;
 }
@@ -649,11 +655,20 @@ video {
 .gap-3 {
 	gap: 0.75rem;
 }
+.gap-5 {
+	gap: 1.25rem;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
 .rounded-3xl {
 	border-radius: 1.5rem;
 }
 .rounded-xl {
 	border-radius: 0.75rem;
+}
+.rounded-2xl {
+	border-radius: 1rem;
 }
 .border-2 {
 	border-width: 2px;
@@ -678,11 +693,34 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
+.bg-white {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.bg-black {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
 .bg-wave-pattern {
 	background-image: url(/assets/img/wave-white.png);
 }
 .bg-wave-dots {
 	background-image: url(/assets/img/pattern-white-dots.png);
+}
+.bg-pattern-characters-red {
+	background-image: url('/assets/img/pattern-characters-red.png');
+}
+.bg-character-mario {
+	background-image: url('/assets/img/character-l.png');
+}
+.bg-contain {
+	background-size: contain;
+}
+.bg-top {
+	background-position: top;
+}
+.bg-no-repeat {
+	background-repeat: no-repeat;
 }
 .bg-repeat-x {
 	background-repeat: repeat-x;
@@ -696,9 +734,19 @@ video {
 .p-4 {
 	padding: 1rem;
 }
+.p-1 {
+	padding: 0.25rem;
+}
 .px-6 {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+.py-28 {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+.pt-52 {
+	padding-top: 13rem;
 }
 .text-center {
 	text-align: center;
@@ -770,8 +818,20 @@ video {
 
 @media (min-width: 768px) {
 
+	.md\:flex {
+		display: flex;
+	}
+
 	.md\:w-4\/6 {
 		width: 66.666667%;
+	}
+
+	.md\:w-full {
+		width: 100%;
+	}
+
+	.md\:w-1\/2 {
+		width: 50%;
 	}
 
 	.md\:flex-row {
@@ -780,6 +840,52 @@ video {
 }
 
 @media (min-width: 1024px) {
+
+	.lg\:container {
+		width: 100%;
+	}
+
+	@media (min-width: 320px) {
+
+		.lg\:container {
+			max-width: 320px;
+		}
+	}
+
+	@media (min-width: 640px) {
+
+		.lg\:container {
+			max-width: 640px;
+		}
+	}
+
+	@media (min-width: 768px) {
+
+		.lg\:container {
+			max-width: 768px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+
+		.lg\:container {
+			max-width: 1024px;
+		}
+	}
+
+	@media (min-width: 1280px) {
+
+		.lg\:container {
+			max-width: 1280px;
+		}
+	}
+
+	@media (min-width: 1536px) {
+
+		.lg\:container {
+			max-width: 1536px;
+		}
+	}
 
 	.lg\:block {
 		display: block;
@@ -795,6 +901,20 @@ video {
 
 	.lg\:justify-start {
 		justify-content: flex-start;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.xl\:w-4\/5 {
+		width: 80%;
+	}
+}
+
+@media (min-width: 1536px) {
+
+	.\32xl\:w-5\/6 {
+		width: 83.333333%;
 	}
 }
 
